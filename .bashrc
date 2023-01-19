@@ -123,3 +123,6 @@ eval "$(starship init bash)"
 
 alias config='/usr/bin/git --git-dir=/home/kolibri/dotfiles/ --work-tree=/home/kolibri'
 alias update='sudo apt update'
+alias upgrade='sudo apt upgrade -y'
+alias restart='sudo reboot 0'
+alias nano='sudo nano'
