@@ -30,6 +30,9 @@ format = "[$user]($style) "
 disabled = false
 show_always = false
 
+[container]
+disabled = true
+
 [hostname]
 ssh_only = false
 format = "on [$hostname](bold yellow) "
