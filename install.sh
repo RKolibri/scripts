@@ -10,14 +10,14 @@ sudo apt-get install -y curl
 curl -sS https://starship.rs/install.sh | sudo sh -s -- -y
 
 # Define the source and destination folders
-source_folder="./config"
-destination_folder="~/.config"
+source_folder="./config_folder"
+destination_folder="$HOME/.config"
 
 source_file="./bashrc_example"
-destination_file="~/.bashrc"
+destination_file="$HOME/.bashrc"
 
 # Copy the config folder to the destination folder
-cp -r $source_folder $destination_folder
+sudo cp -r $source_folder $destination_folder
 
 # Copy the bashrc_example file to the destination file
-cp $source_file $destination_file
+sudo cp $source_file $destination_file
