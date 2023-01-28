@@ -25,4 +25,8 @@ sudo cp -r $source_folder $destination_folder
 # Copy the bashrc_example file to the destination file
 sudo cp $source_file $destination_file
 
+#wait 5 seconds
+sleep 5
+
+# Change the ownership of the files to the current user
 sudo chown -R $USER:$USER $HOME/*
