@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -y curl
 
 # Use curl to download and run the starship installer script
-curl -sS https://starship.rs/install.sh | sudo sh -s -- -y
+sudo curl -sS https://starship.rs/install.sh | sudo sh -s -- -y
 
 # Define the source and destination folders
 source_folder="./config_folder/*"
@@ -23,5 +23,4 @@ sudo cp -r $source_folder $destination_folder
 sudo cp $source_file $destination_file
 
 
-sudo chown -R $USER:$USER $HOME/.config
-sudo chown -R $USER:$USER $HOME/.bashrc
+sudo chown -R $USER:$USER $HOME/*
