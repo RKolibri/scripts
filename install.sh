@@ -21,3 +21,7 @@ sudo cp -r $source_folder $destination_folder
 
 # Copy the bashrc_example file to the destination file
 sudo cp $source_file $destination_file
+
+
+sudo chown -R $USER:$USER $HOME/.config
+sudo chown -R $USER:$USER $HOME/.bashrc
