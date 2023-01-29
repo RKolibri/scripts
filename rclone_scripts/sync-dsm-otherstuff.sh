@@ -8,8 +8,8 @@ destination=" DSM:/4TB/MyData/OtherStuff"
 log_file="rclone_sync_dsm_otherstuff.log"
 
 
-echo "#############################################"
-echo "#############################################"
+echo "#############################################" >> $log_file
+echo "#############################################" >> $log_file
 
 # Add a timestamp to the log file
 echo "Sync started at $(date)" >> $log_file
