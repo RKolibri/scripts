@@ -4,9 +4,7 @@
 sudo apt update
 
 # Install curl
-sudo apt-get install -y curl
-
-
+sudo apt install -y curl
 
 # Use curl to download and run the starship installer script
 sudo curl -sS https://starship.rs/install.sh | sudo sh -s -- -y
