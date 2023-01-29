@@ -1,6 +1,6 @@
 # Scripts
 
-Docker, Portainer and starship prompt installation with rclone scripts
+`Docker` , `Portainer` , `Starship prompt` , `Rclone` scripts
 
 ## Project Structure
 
@@ -16,4 +16,21 @@ Docker, Portainer and starship prompt installation with rclone scripts
   - [`sync_dsm-vm.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_dsm-vm.sh)
   - [`sync_ionos-myfiles.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_ionos-myfiles.sh)
   - [`sync_ionos-vm.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_ionos-vm.sh)
+
+
+## Docker and Portainer Install
+
+The `custom_scripts` directory contains the `install_docker.sh` script for installing Docker and Portainer. The user can choose to install either the CE or EE version of Portainer.
+
+## starship prompt
+
+The `custom_scripts` directory contains the `install_starship.sh` script for installing the [starship prompt](https://starship.rs/). The script also adds my configuration from the `configs_folder/starship.toml` directory.
+
+## rclone scripts
+
+The `rclone_scripts` directory contains scripts for syncing with  WebDAV remotes using rclone.
+
+## Other scripts
+
+The `custom_scripts` directory also contains a script `update_lxcs.sh` for updating LXC containers in Proxmox the script credit goes to the [tteck](https://github.com/tteck/Proxmox).
 
