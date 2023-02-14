@@ -4,6 +4,11 @@
 source="/mydata/proxmox/dump"
 destination="ionos:/users/kolibri96/VM-LXC"
 
+#echo 2 rows with # symbol
+
+echo "#############################################" >> $log_file
+echo "#############################################" >> $log_file
+
 # Set the log file
 log_file="rclone_sync_ionos_vm.log"
 

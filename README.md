@@ -1,29 +1,36 @@
-## Dotfiles
+# Scripts
 
-Dotfiles are configuration files that are used to customize and personalize the settings of various programs and applications on a Unix-based system. These files typically have a `.` (dot) at the beginning of their names, which makes them hidden by default in most file browsers.
+`Docker` , `Portainer` , `Starship prompt` , `Rclone` scripts
 
-The dotfiles in this repository are used to configure my personal development environment on my Unix-based systems. It includes configuration files for the following programs:
+## Project Structure
 
-- [bash](https://www.gnu.org/software/bash/)
-- [vim](https://www.vim.org/)
-- [tmux](https://tmux.github.io/)
-- [git](https://git-scm.com/)
+- `config_folder/`
+  - [`starship.toml`](https://github.com/RKolibri/scripts/blob/main/config_folder/starship.toml)
+- `custom_scripts/`
+  - [`install_docker.sh`](https://github.com/RKolibri/scripts/blob/main/custom_scripts/install_docker.sh)
+  - [`install_starship.sh`](https://github.com/RKolibri/scripts/blob/main/custom_scripts/install_starship.sh)
+  - [`update_lxcs.sh`](https://github.com/RKolibri/scripts/blob/main/custom_scripts/update_lxcs.sh)
+- `rclone_scripts/`
+  - [`sync_dsm-myfiles.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_dsm-myfiles.sh)
+  - [`sync_dsm-otherstuff.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_dsm-otherstuff.sh)
+  - [`sync_dsm-vm.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_dsm-vm.sh)
+  - [`sync_ionos-myfiles.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_ionos-myfiles.sh)
+  - [`sync_ionos-vm.sh`](https://github.com/RKolibri/scripts/blob/main/rclone_scripts/sync_ionos-vm.sh)
 
-These dotfiles are meant to be used on a Unix-based system and have been tested on macOS and Linux.
 
-## Installation
+## Docker and Portainer Install
 
- To install these dotfiles, you can clone the repository and run the `install.sh` script (not done yet):
- ```bash
-  git clone https://github.com/RKolibri/dotfiles.git
-  cd dotfiles
-  ./install.sh 
-```
- 
-This will create symbolic links in your home directory that point to the files in the repository. Please backup any important files before running the install script as it will overwrite any existing dotfiles in your home directory.
+The `custom_scripts` directory contains the `install_docker.sh` script for installing Docker and Portainer. The user can choose to install either the CE or EE version of Portainer.
 
-## Contributions
-If you have any suggestions or improvements, feel free to open a pull request or an issue.
+## starship prompt
 
-## License
-This repository is licensed under the MIT License.
+The `custom_scripts` directory contains the `install_starship.sh` script for installing the [starship prompt](https://starship.rs/). The script also adds my configuration from the `configs_folder/starship.toml` directory.
+
+## rclone scripts
+
+The `rclone_scripts` directory contains scripts for syncing with  WebDAV remotes using rclone.
+
+## Other scripts
+
+The `custom_scripts` directory also contains a script `update_lxcs.sh` for updating LXC containers in Proxmox the script credit goes to the [tteck](https://github.com/tteck/Proxmox).
+

@@ -6,6 +6,11 @@ destination="DSM:/4TB/ProxmoxVms"
 
 # Set the log file
 log_file="rclone_sync-dsm-vm.log"
+
+#echo 2 rows with # symbol
+
+echo "#############################################" >> $log_file
+echo "#############################################" >> $log_file
 # Add a timestamp to the log file
 echo "Sync started at $(date)" >> $log_file
 

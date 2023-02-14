@@ -7,6 +7,10 @@ destination="ionos:/users/kolibri96/MyFiles"
 # Set the log file
 log_file="rclone_sync_ionos_myfiles.log"
 
+#echo 2 rows with # symbol
+
+echo "#############################################" >> $log_file
+echo "#############################################" >> $log_file
 # Add a timestamp to the log file
 echo "Sync started at $(date)" >> $log_file
 
