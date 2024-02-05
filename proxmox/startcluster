@@ -1,0 +1,1 @@
+for i in {10210..10215}; do qm start $i; done

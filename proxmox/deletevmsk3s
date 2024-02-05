@@ -1,0 +1,6 @@
+qm destroy 10210 --purge
+qm destroy 10211 --purge
+qm destroy 10212 --purge
+qm destroy 10213 --purge
+qm destroy 10214 --purge
+qm destroy 10215 --purge
