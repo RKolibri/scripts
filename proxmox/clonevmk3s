@@ -1,7 +1,7 @@
 #!/bin/bash
 
 GATEWAY="10.10.0.1"
-BASE_IP="10.10."
+BASE_IP="10.10.0."
 TAGS="k3s,k8s,kubernetes,homelab,cluster,dev"
 
 function create_and_start_vm() {
