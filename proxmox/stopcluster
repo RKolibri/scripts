@@ -1,1 +1,1 @@
-for i in {10210..10215}; do qm stop $i; done
+for i in {210..215}; do qm stop $i; done
